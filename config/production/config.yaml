@@ -2,6 +2,11 @@
 
 baseURL: https://site.diapason.osuny.site
 
+## OSUNY
+osuny:
+  website:
+    id: 25fc395d-8c6f-476f-b45c-0d922e4c7778
+
 ## LANGUAGE
 defaultContentLanguage: fr
 defaultContentLanguageInSubdir: false
