@@ -1,0 +1,84 @@
+@keyframes vibration
+    0%, 10%, 20%, 30%, 50%, 80%
+        transform: translateY(-2%)
+    5%, 15%, 25%, 35%, 65%, 90%
+        transform: translateY(2%)
+    100%
+        transform: translateY(0)
+
+.logo
+    position: relative
+    img
+        display: block
+    svg
+        position: absolute
+        top: 50%
+        transform: translateY(-50%)
+        left: 0
+        right: 0
+        width: 100%
+        height: auto
+        opacity: 0
+        transition-delay: .1s
+        path
+            transition: all .1s cubic-bezier(0.680, -1.550, 0.265, 2.150)
+            &:nth-child(2)
+                transform: translateY(15%)
+            &:nth-child(3)
+                transform: translateY(-15%)
+            &:nth-child(4),
+            &:nth-child(9),
+                transform: translateY(15%)
+            &:nth-child(5),
+            &:nth-child(10),
+                transform: translateY(-15%)
+            &:nth-child(6)
+                transform: translateY(25%)
+            &:nth-child(8)
+                transform: translateY(-25%)
+            &:nth-child(12)
+                transform: translateY(15%)
+            &:nth-child(13)
+                transform: translateY(-15%)
+    &:hover
+        svg
+            opacity: 1
+            transition-delay: 0s
+            path
+                transform: translate(0, 0) !important
+        img
+            opacity: 0
+    &:not(:hover)
+        animation: vibration .25s cubic-bezier(0.075, 0.820, 0.065, 1.000)
+
+
+// .logo
+//     svg
+//         path
+//             transition: all .1s cubic-bezier(0.980, -1.550, 0.265, 2.150)
+//             &:nth-child(2)
+//                 transform: translate(1%, 15%)
+//             &:nth-child(3)
+//                 transform: translate(-1%, -15%)
+//             &:nth-child(4),
+//             &:nth-child(9),
+//                 transform: translate(1%, 15%)
+//             &:nth-child(5),
+//             &:nth-child(10),
+//                 transform: translate(-1%, -15%)
+//             &:nth-child(6)
+//                 transform: translate(1%, 25%)
+//             &:nth-child(8)
+//                 transform: translate(-1%, -25%)
+//             &:nth-child(12)
+//                 transform: translate(1%, 15%)
+//             &:nth-child(13)
+//                 transform: translate(-1%, -15%)
+//     &:hover
+//         svg
+//             path
+//                 transform: translate(0, 0) !important
+//                 // &:nth-child(even)
+//                 //     transform: translate(1%, 0) !important
+//                 // &:nth-child(odd)
+//                 //     transform: translate(-1%, 0) !important
