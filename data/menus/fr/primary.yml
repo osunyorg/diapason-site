@@ -15,11 +15,4 @@ items:
   children: []
   path: "/projects"
   file: content/fr/projects/_index.html
-- title: Organisations
-  target: "/organisations/"
-  kind: page
-  new_tab: false
-  children: []
-  path: "/organizations"
-  file: content/fr/organizations/_index.html
 
