@@ -1,0 +1,13 @@
+header#document-header
+    @include media-breakpoint-up(desktop)
+        .logo
+            position: absolute
+            left: 50%
+            transform: translateX(-50%)
+        .menu
+            flex: 1
+            .nav-level-1
+                justify-content: space-between
+                li:first-child
+                    a
+                        padding-left: 0

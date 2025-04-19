@@ -1,0 +1,41 @@
+.page__home
+    @include media-breakpoint-up(desktop)
+        .block-persons--grid
+            .persons
+                display: flex
+                flex-wrap: wrap
+                justify-content: center
+                .person
+                    width: columns(3)
+                    padding-left: $spacing-3
+                    padding-right: $spacing-3
+        .block-definitions
+            .block-content
+                display: flex
+                gap: var(--grid-gutter)
+                .top
+                    width: columns(4)
+                    .block-title
+                        @include h5
+                .definitions
+                    width: columns(8)
+                    details
+                        summary
+                            @include h3
+                            padding-top: $spacing-3
+                            padding-bottom: $spacing-3
+                            &::after
+                                content: '+'
+                                font-family: inherit
+                        p
+                            padding-left: 0
+                            margin-left: 0
+                        &:hover 
+                            summary::after
+                                transform: scale(0.9)
+                        &[open]
+                            summary::after
+                                transform: rotate(135deg)
+                            &:hover
+                                summary::after
+                                    transform: scale(0.9) rotate(135deg)
