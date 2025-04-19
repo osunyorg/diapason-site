@@ -1,0 +1,23 @@
+footer#document-footer
+    @include media-breakpoint-up(desktop)
+    > .container:first-child
+        padding-top: pxToRem(220)
+        padding-bottom: 0
+        justify-content: center
+        margin-bottom: pxToRem(-18)
+        + .container
+            padding-top: 0
+            display: block
+    .footer-legals
+        display: flex
+        align-items: center
+        gap: $spacing-3
+        justify-content: space-between
+        ul
+            display: inline
+            li
+                display: inline
+            li + li
+                margin-top: 0
+        .footer-credit
+            margin-top: 0

@@ -1,6 +1,9 @@
 .page__home
     @include media-breakpoint-up(desktop)
         .block-persons--grid
+            background: var(--color-background-alt)
+            padding-top: var(--block-space-y)
+            padding-bottom: var(--block-space-y)
             .persons
                 display: flex
                 flex-wrap: wrap
@@ -9,6 +12,8 @@
                     width: columns(3)
                     padding-left: $spacing-3
                     padding-right: $spacing-3
+                    .avatar
+                        mix-blend-mode: multiply
         .block-definitions
             .block-content
                 display: flex

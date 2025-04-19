@@ -11,3 +11,10 @@ params:
   logo:
     header: ''
     footer: ''
+  posts:
+    index:
+      options:
+        image: false
+    single:
+      summary:
+        position: content # hero | content
