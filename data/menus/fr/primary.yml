@@ -8,7 +8,7 @@ items:
   children: []
   path: "/posts"
   file: content/fr/posts/_index.html
-- title: Projets
+- title: Références
   target: "/projets/"
   kind: page
   new_tab: false
