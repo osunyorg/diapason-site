@@ -1,4 +1,6 @@
-theme: osuny
+theme: 
+  - osuny
+  - osuny-masonry
 enableRobotsTXT: true
 removePathAccents: true
 pagination:
