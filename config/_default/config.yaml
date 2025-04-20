@@ -20,3 +20,6 @@ params:
     single:
       summary:
         position: content # hero | content
+  projects:
+    share_links:
+      enabled: false

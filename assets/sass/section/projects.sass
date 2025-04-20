@@ -1,6 +1,35 @@
 .projects__section
     .projects--grid
-        @include grid(3)
+        @include grid(3, desktop)
         .project-title
             @include h4
             font-weight: normal
+
+.projects__page
+    @include media-breakpoint-up(desktop)
+        .hero
+            padding-bottom: 0
+            .content
+                flex-direction: column
+                align-items: center
+                .hero-text
+                    width: auto
+                    align-items: center
+                    .project-infos
+                        justify-content: center
+            figure
+                position: relative
+                &::after
+                    content: ''
+                    background: white
+                    display: block
+                    position: absolute
+                    width: 100vw
+                    height: 100%
+                    top: 0
+                    left: 50%
+                    transform: translateX(-50%)
+                    z-index: 0
+                img
+                    position: relative
+                    z-index: 2
