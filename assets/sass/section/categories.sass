@@ -1,2 +1,13 @@
-.categories
-    
+.categorie-item
+    border: 1px solid var(--color-border)
+    text-decoration: none
+    padding: pxToRem(2) $spacing-2
+    border-radius: pxToRem(50)
+    transition: 0.3s
+    &:hover
+        background: var(--color-background)
+
+.taxonomies-single
+    li
+        a
+            @extend .categorie-item

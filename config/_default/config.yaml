@@ -23,7 +23,7 @@ params:
   projects:
     share_links:
       enabled: false
-    # single:
-    #   taxonomies:
-    #     position: hero # content | hero | none
-    #     display: false
+    single:
+      taxonomies:
+        position: hero # content | hero | none
+        display: false
