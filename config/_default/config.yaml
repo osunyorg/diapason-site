@@ -17,13 +17,19 @@ params:
     index:
       options:
         image: false
+        categories: false
     single:
+      taxonomies:
+        position: hero
+        display: false
       summary:
         position: content # hero | content
   projects:
-    share_links:
-      enabled: false
+    index:
+      taxonomies: false
     single:
       taxonomies:
-        position: hero # content | hero | none
+        position: hero
         display: false
+    share_links:
+      enabled: false

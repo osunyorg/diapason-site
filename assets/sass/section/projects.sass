@@ -1,22 +1,35 @@
 .projects__section
+    .has-breadcrumb-hero-start
+        margin-bottom: 0
     .projects--grid
         @include grid(3, desktop)
         .project-title
             @include h4
             font-weight: normal
+            + [itemprop="abstract"]
+                margin-top: $spacing-2
+    .project-categories
+        row-gap: $spacing-2
+        a
+            text-decoration: none
+            color: $color-text
 
 .projects__page
+    .hero
+        padding-bottom: 0
+        .content
+            flex-direction: column
+            align-items: center
+            .hero-text
+                align-items: center
+                width: auto
+                .project-infos
+                    justify-content: center
+            .year
+                @include h1
+                font-weight: normal
     @include media-breakpoint-up(desktop)
         .hero
-            padding-bottom: 0
-            .content
-                flex-direction: column
-                align-items: center
-                .hero-text
-                    width: auto
-                    align-items: center
-                    .project-infos
-                        justify-content: center
             figure
                 position: relative
                 &::after
@@ -33,6 +46,45 @@
                 img
                     position: relative
                     z-index: 2
-            .year
-                @include h1
-                font-weight: normal
+                figcaption
+                    .credit,
+                    &:before
+                        background-color: transparent
+        // BLOCKS
+        .block-summary
+            margin-right: auto
+            margin-left: auto
+            &::after
+                content: ''
+                display: block
+                background-color: $color-text
+                height: 3px
+                margin-left: auto
+                margin-right: auto
+                margin-top: $spacing-5
+                width: var(--grid-gutter)
+            @include media-breakpoint-up(desktop)
+                text-align: center
+                width: columns(10)
+                p
+                    font-size: $lead-sidebar-size-desktop
+                    font-size: $lead-sidebar-line-height-desktop
+        .blocks
+            margin-top: $spacing-6
+        &.full-width
+            .block-chapter
+                .rich-text
+                    width: columns(8)
+                &.block-titled
+                    .chapter
+                        .text
+                            display: flex
+                            gap: var(--grid-gutter)
+                            width: 100%
+                        .top
+                            width: columns(4)
+                            .block-title
+                                @include h5
+                &:not(.block-titled)
+                    .rich-text
+                        margin-left: offset(4)

@@ -1,5 +1,19 @@
 .posts__page
+    .hero
+        .posts-taxonomies
+            width: 100%
+            .taxonomy-children
+                justify-content: center
+                width: 100%
     .post-infos
         li
             > span:first-child
                 font-weight: bold
+.posts__section
+    .post
+        @include media-breakpoint-up(desktop)
+            &.without-image
+                .post-content
+                    .post-title,
+                    [itemprop="abstract"]
+                        max-width: columns(8)
