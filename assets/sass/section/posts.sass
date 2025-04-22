@@ -9,11 +9,22 @@
         li
             > span:first-child
                 font-weight: bold
-.posts__section
-    .post
-        @include media-breakpoint-up(desktop)
-            &.without-image
-                .post-content
-                    .post-title,
-                    [itemprop="abstract"]
+
+// list appareance
+.posts--list,
+.block-posts--list
+    @include in-page-without-sidebar
+        article
+            padding-bottom: $spacing-3
+            + article
+                margin-top: $spacing-3
+            .post-meta
+                padding-top: 0
+            .post-content
+                .post-title
+                    max-width: columns(10)
+                    width: columns(10)
+                    + [itemprop="abstract"]
+                        margin-top: $spacing-3
                         max-width: columns(8)
+                        width: columns(8)

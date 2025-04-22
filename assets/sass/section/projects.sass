@@ -11,6 +11,14 @@
         a
             text-decoration: none
             color: $color-text
+    .document-content
+        display: flex
+        flex-direction: column
+        .blocks
+            margin-top: $spacing-6
+            order: 2
+        > .container
+            margin-top: 0
     @include media-breakpoint-down(desktop)
         .has-breadcrumb-hero-start
             margin-bottom: 0
