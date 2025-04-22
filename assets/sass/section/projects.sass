@@ -1,6 +1,4 @@
 .projects__section
-    .has-breadcrumb-hero-start
-        margin-bottom: 0
     .projects--grid
         @include grid(3, desktop)
         .project-title
@@ -13,6 +11,9 @@
         a
             text-decoration: none
             color: $color-text
+    @include media-breakpoint-down(desktop)
+        .has-breadcrumb-hero-start
+            margin-bottom: 0
 
 .projects__page
     .hero
