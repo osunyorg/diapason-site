@@ -73,9 +73,9 @@
                     &::after
                         content: '+'
                         font-family: inherit
-                p
-                    padding-left: 0
-                    margin-left: 0
+                    p
+                        padding-left: 0
+                        margin-left: 0
                 @include media-breakpoint-up(desktop)
                     &:hover 
                         summary::after
@@ -102,3 +102,11 @@
                     width: columns(4)
                     .block-title
                         @include h5
+
+    &.full-width
+        .block-definitions
+            .definitions
+                @include media-breakpoint-up(desktop)
+                    details p
+                        padding-left: 0
+                        margin-left: 0
