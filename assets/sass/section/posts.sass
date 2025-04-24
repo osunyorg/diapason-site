@@ -9,6 +9,10 @@
         li
             > span:first-child
                 font-weight: bold
+    .document-content::after
+        background-color: $color-background-alt
+    .post-sidebar
+        padding-bottom: calc(#{$spacing-6} * 2)
 
 // list appareance
 .posts--list,
@@ -28,3 +32,20 @@
                         margin-top: $spacing-3
                         max-width: columns(8)
                         width: columns(8)
+// hover color
+.posts--list
+    article:hover
+        *
+            color: $color-accent
+.block-posts--list
+    article:hover
+        .post-content a
+            color: $color-accent
+
+// block title
+.block-posts
+    .block-title a
+        &::after
+            opacity: 0
+        &:hover::after
+            opacity: 1

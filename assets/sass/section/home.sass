@@ -3,7 +3,7 @@
         padding-bottom: var(--block-space-y)
         margin-bottom: 0
         h1
-            em
+            em:not(:first-child)                    
                 display: block
                 font-weight: normal
                 font-style: normal
@@ -73,9 +73,9 @@
                     &::after
                         content: '+'
                         font-family: inherit
-                    p
-                        padding-left: 0
-                        margin-left: 0
+                p
+                    b
+                        @include lead
                 @include media-breakpoint-up(desktop)
                     &:hover 
                         summary::after
