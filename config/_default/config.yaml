@@ -33,5 +33,7 @@ params:
       taxonomies:
         position: hero
         display: false
+      summary:
+        position: content
     share_links:
       enabled: false
