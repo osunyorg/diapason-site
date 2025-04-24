@@ -9,7 +9,7 @@
     .project-categories
         a
             text-decoration: none
-            color: $color-text
+            color: var(--color-text)
     .document-content
         display: flex
         flex-direction: column
@@ -65,7 +65,7 @@
         &::after
             content: ''
             display: block
-            background-color: $color-text
+            background-color: var(--color-text)
             height: 3px
             margin-left: auto
             margin-right: auto
@@ -101,3 +101,7 @@
                 &.image-landscape
                     .block-content
                         margin-left: offset(4)
+
+.project
+    time
+        color: var(--color-text)

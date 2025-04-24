@@ -25,6 +25,10 @@ params:
       summary:
         position: content # hero | content
   projects:
+    index:
+      options:
+        summary: false
+        year: true
     single:
       taxonomies:
         position: hero
