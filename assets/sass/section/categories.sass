@@ -6,7 +6,8 @@
     text-decoration: none
     transition: 0.3s
     &:hover
-        background: var(--color-background)
+        background-color: $color-text
+        color: var(--color-background)
 
 .taxonomies-single,
 .project .project-categories
@@ -17,3 +18,27 @@
 .project .project-categories
     margin-top: $spacing-3
     row-gap: $spacing-2
+
+.posts__section,
+.projects__section
+    .taxonomies-list
+        margin-top: 0
+        button
+            @extend .sr-only
+        .extendable
+            background: none
+            display: block
+            position: relative
+            top: unset
+            right: unset
+            left: unset
+            ul
+                display: flex
+                gap: $spacing-2
+                flex-wrap: wrap
+                li
+                    &:not(:first-child)
+                        border: none
+                    a
+                        @include body-text
+                        @extend .categorie-item
