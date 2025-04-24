@@ -1,14 +1,19 @@
 .categorie-item
     border: 1px solid var(--color-border)
-    text-decoration: none
-    padding: pxToRem(2) $spacing-2
     border-radius: pxToRem(50)
+    color: inherit
+    padding: pxToRem(2) $spacing-2
+    text-decoration: none
     transition: 0.3s
     &:hover
         background: var(--color-background)
 
 .taxonomies-single,
-.project-categories
+.project .project-categories
     li
         a
             @extend .categorie-item
+
+.project .project-categories
+    margin-top: $spacing-3
+    row-gap: $spacing-2

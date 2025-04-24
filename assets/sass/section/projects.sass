@@ -7,7 +7,6 @@
             + [itemprop="abstract"]
                 margin-top: $spacing-2
     .project-categories
-        row-gap: $spacing-2
         a
             text-decoration: none
             color: $color-text
@@ -59,28 +58,29 @@
                     .credit,
                     &:before
                         background-color: transparent
-        // BLOCKS
-        .block-summary
-            margin-right: auto
+    // BLOCKS
+    .block-summary
+        margin-right: auto
+        margin-left: auto
+        &::after
+            content: ''
+            display: block
+            background-color: $color-text
+            height: 3px
             margin-left: auto
-            &::after
-                content: ''
-                display: block
-                background-color: $color-text
-                height: 3px
-                margin-left: auto
-                margin-right: auto
-                margin-top: $spacing-5
-                width: var(--grid-gutter)
-            @include media-breakpoint-up(desktop)
-                text-align: center
-                width: columns(10)
-                p
-                    font-size: $lead-sidebar-size-desktop
-                    font-size: $lead-sidebar-line-height-desktop
-        .blocks
-            margin-top: $spacing-6
-        &.full-width
+            margin-right: auto
+            margin-top: $spacing-5
+            width: var(--grid-gutter)
+        @include media-breakpoint-up(desktop)
+            text-align: center
+            width: columns(10)
+            p
+                font-size: $lead-sidebar-size-desktop
+                font-size: $lead-sidebar-line-height-desktop
+    .blocks
+        margin-top: $spacing-6
+    &.full-width
+        @include media-breakpoint-up(desktop)
             .block-chapter
                 .rich-text
                     width: columns(8)
@@ -97,3 +97,52 @@
                 &:not(.block-titled)
                     .rich-text
                         margin-left: offset(4)
+            .block-image
+                &.image-landscape
+                    .block-content
+                        margin-left: offset(4)
+    .block-siblings-navigation
+        padding-top: $spacing-4
+        background-color: $color-background-alt
+        margin-bottom: 0
+        .siblings-navigation
+            border: none
+            li
+                a
+                    @include h3
+                    font-weight: bold
+                    padding-bottom: $spacing-3
+                    position: relative
+                    &:hover
+                        color: $color-text
+                        &::after
+                            width: var(--grid-gutter)
+                    span
+                        @include meta
+                @include media-breakpoint-up(xl)
+                    max-width: columns(5)
+            .next span
+                    @include icon(arrow-right-s-line, after)
+            .previous span
+                    @include icon(arrow-left-s-line)
+            @include media-breakpoint-up(desktop)
+                ul
+                    justify-content: space-between
+                li 
+                    a::after
+                        background: $color-text
+                        bottom: 0
+                        height: 3px
+                        position: absolute
+                        transition: all 0.3s ease
+                        width: 0%
+                .next a::after
+                    content: ''
+                    right: 0
+                .previous a::after
+                    content: ''
+                    left: 0
+            @include media-breakpoint-down(desktop)
+                .previous::before,
+                .next::after
+                    content: none

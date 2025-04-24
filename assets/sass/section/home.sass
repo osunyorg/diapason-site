@@ -1,8 +1,28 @@
 .page__home
+    .hero
+        padding-bottom: var(--block-space-y)
+        margin-bottom: 0
+        h1
+            em
+                display: block
+                font-weight: normal
+                font-style: normal
+        .has-lead
+            position: relative
+            &::after
+                content: ''
+                display: block
+                background-color: $color-text
+                height: 3px
+                margin-left: auto
+                margin-right: auto
+                margin-top: $spacing-5
+                width: var(--grid-gutter)
     @include media-breakpoint-up(desktop)
+        .block:first-child.block-persons--grid
+            padding-top: $spacing-3
         .block-persons--grid
             background: var(--color-background-alt)
-            padding-top: var(--block-space-y)
             padding-bottom: var(--block-space-y)
             .persons
                 display: flex
@@ -14,6 +34,33 @@
                     padding-right: $spacing-3
                     .avatar
                         mix-blend-mode: multiply
+        .block-projects--grid
+            .container
+                padding-left: 0
+                padding-right: 0
+                width: unset
+            .projects--grid
+                display: flex
+                overflow: auto
+                padding-left: var(--grid-gutter)
+                padding-right: var(--grid-gutter)
+                padding-bottom: $spacing-3
+                scrollbar-width: none
+                &::-webkit-scrollbar
+                    display: none
+                .project
+                    width: columns(5)
+                    flex: none
+    .heading
+        h2
+            @include h5
+    .block-projects + .block-call_to_action--no_background
+        .block-content
+            padding-bottom: $spacing-3
+            padding-top: 0
+            .call_to_action--without-text
+                .actions a:first-child
+                    margin-top: 0
     .block-definitions
         .definitions
             @include media-breakpoint-up(desktop)
@@ -41,6 +88,8 @@
                             transform: rotate(135deg)
                             @include media-breakpoint-up(desktop)
                                 transform: scale(0.9) rotate(135deg)
+                &:first-child summary
+                    padding-top: 0
                 @include media-breakpoint-down(desktop)
                     &:not([open]):hover 
                         summary::after
