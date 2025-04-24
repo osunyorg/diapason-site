@@ -37,17 +37,15 @@
                         margin-top: $spacing-3
                         max-width: columns(8)
                         width: columns(8)
-// hover color
-.posts--list
-    article:hover
-        *
-            color: var(--color-accent)
 
-.block-posts--list
-    time
-        color: var(--color-text)
+.block-posts--list, .posts--list
+    article
+        a, .post-meta, time
+            color: inherit
+        .post-content
+            transition: color $color-duration
     article:hover
-        .post-content a
+        .post-content
             color: var(--color-accent)
     @include in-page-without-sidebar
         article .post-meta time

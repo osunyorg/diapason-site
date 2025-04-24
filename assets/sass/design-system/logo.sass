@@ -19,38 +19,80 @@
         width: 100%
         height: auto
         opacity: 0
-        transition-delay: .1s
+        transition-delay: 0s
         path
-            transition: all .1s cubic-bezier(0.680, -1.550, 0.265, 2.150)
+            --translate-y: 0
+            // transition: all .1s cubic-bezier(0.680, -1.550, 0.265, 2.150)
+            // transition: all .5s
+            transform: translateY(var(--translate-y))
             &:nth-child(2)
-                transform: translateY(15%)
+                --translate-y: 15%
             &:nth-child(3)
-                transform: translateY(-15%)
+                --translate-y: -15%
             &:nth-child(4),
             &:nth-child(9),
-                transform: translateY(15%)
+                --translate-y: 15%
             &:nth-child(5),
             &:nth-child(10),
-                transform: translateY(-15%)
+                --translate-y: -15%
             &:nth-child(6)
-                transform: translateY(25%)
+                --translate-y: 25%
             &:nth-child(8)
-                transform: translateY(-25%)
+                --translate-y: -25%
             &:nth-child(12)
-                transform: translateY(15%)
+                --translate-y: 15%
             &:nth-child(13)
-                transform: translateY(-15%)
-    &:hover
+                --translate-y: -15%
+    &.is-animated
+        $delay: 0.05
         svg
             opacity: 1
             transition-delay: 0s
             path
-                transform: translate(0, 0) !important
+                // animation: translateY 0.3s forwards cubic-bezier(0.680, -1.550, 0.265, 2.150)
+                // cubic-bezier(0.46,0.03,0.52,0.96)
+                animation: translateY 1.5s forwards cubic-bezier(0.46,0.03,0.52,0.96)
+                &:nth-child(4), &:nth-child(5)
+                    animation-delay: #{$delay}s
+                &:nth-child(6), &:nth-child(8)
+                    animation-delay: #{$delay*2}s
+                &:nth-child(9), &:nth-child(10)
+                    animation-delay: #{$delay*3}s
+                &:nth-child(12), &:nth-child(13)
+                    animation-delay: #{$delay*4}s
+        &.reversed
+            svg
+                path
+                    &:nth-child(42), &:nth-child(3)
+                        animation-delay: #{$delay*4}s
+                    &:nth-child(4), &:nth-child(5)
+                        animation-delay: #{$delay*3}s
+                    &:nth-child(6), &:nth-child(8)
+                        animation-delay: #{$delay*2}s
+                    &:nth-child(9), &:nth-child(10)
+                        animation-delay: #{$delay}s
+                    &:nth-child(12), &:nth-child(13)
+                        animation-delay: 0s
         img
             opacity: 0
     // &:not(:hover)
     //     animation: vibration .25s cubic-bezier(0.075, 0.820, 0.065, 1.000)
 
+@keyframes translateY
+    0%
+        transform: translateY(var(--translate-y))
+    // 15%
+    //     transform: translateY(calc(var(--translate-y) * 0.5))
+    // 30%
+    //     transform: translateY(calc(var(--translate-y) * 0.4))
+    15%
+        transform: translateY(calc(var(--translate-y) * -0.3))
+    35%
+        transform: translateY(calc(var(--translate-y) * 0.4))
+    55%
+        transform: translateY(calc(var(--translate-y) * 0.2))
+    100%
+        transform: translateY(var(--translate-y))
 
 // .logo
 //     svg
@@ -82,3 +124,4 @@
 //                 //     transform: translate(1%, 0) !important
 //                 // &:nth-child(odd)
 //                 //     transform: translate(-1%, 0) !important
+
