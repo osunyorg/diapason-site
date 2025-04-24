@@ -1,4 +1,9 @@
 ---
 title: Liens sociaux
-items: []
+items:
+- title: 'bonjour@diapason-agence.fr '
+  target: 'mailto:bonjour@diapason-agence.fr '
+  kind: url
+  new_tab: false
+  children: []
 
