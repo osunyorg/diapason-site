@@ -17,6 +17,6 @@ logos.forEach(function (logo) {
         timeout = window.setTimeout(function() {
             logo.classList.remove('is-animated');
             timeout = null;
-        }, 1600);
+        }, 1700);
     });
 })

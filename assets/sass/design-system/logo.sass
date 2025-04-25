@@ -13,22 +13,24 @@
         height: auto
         path
             --translate-y: 0%
+            --opacity: 0
             &:nth-child(3n)
                 --translate-y: 35%
+                --opacity: 1
             &:nth-child(3n + 1)
                 --translate-y: -35%
+                --opacity: 1
 
     &.is-animated
-        $delay: 0.03
+        $delay: 0.09
         img
             opacity: 0
         svg
             path
-                animation: translateY 0.7s forwards cubic-bezier(0.46,0.03,0.52,0.96)
+                animation: translateY 1s forwards cubic-bezier(0.46,0.03,0.52,0.96)
                 @for $i from 1 through 8
                     &:nth-child(8n + #{$i})
                         animation-delay: #{$delay * $i}s
-
         &.reversed
             svg
                 path
@@ -65,7 +67,17 @@
 @keyframes translateY
     0%
         transform: translateY(0)
-    50%
+    20%
         transform: translateY(calc(var(--translate-y)))
+    39.9%
+        opacity: 1
+    40%
+        transform: translateY(0)
+        opacity: var(--opacity)
+    65%
+        transform: translateY(calc(var(--translate-y) * 0.5))
+        opacity: var(--opacity)
     100%
         transform: translateY(0)
+        opacity: var(--opacity)
+
