@@ -4,49 +4,27 @@ footer#document-footer
     .logo
         display: table
     > .container:first-child
-        padding-top: pxToRem(220)
+        padding-top: pxToRem(50)
         padding-bottom: 0
         justify-content: center
-        margin-bottom: pxToRem(-18)
         @include media-breakpoint-up(desktop)
+            padding-top: pxToRem(250)
+            padding-bottom: 0
+            justify-content: center
+            margin-bottom: pxToRem(-180)
             + .container
                 display: flex
                 padding-top: $spacing-6
     .footer-legals
         order: 2
         @include media-breakpoint-up(desktop)
-
-            @media screen and (min-width: $large-breakpoint)
-                align-items: center
-                display: flex
-                gap: space(2)
-                justify-content: space-between
-                ul
-                    display: inline
-                    li
-                        display: inline
-                    li + li
-                        margin-top: 0
-                        margin-left: space()
-            @media screen and (max-width: $large-breakpoint)
-                ul li
+            ul
+                li
                     text-align: right
     .footer-credit
         margin-top: $spacing-2
-        @media screen and (min-width: $large-breakpoint)
-            margin-top: 0
     .footer-social
-        ul
-            @media screen and (max-width: $large-breakpoint)
+        @include media-breakpoint-up(desktop)
+            ul
                 li
                     text-align: left
-            @media screen and (min-width: $large-breakpoint)
-                display: flex
-                flex-wrap: wrap
-                align-items: baseline
-                justify-content: flex-end
-                li
-                    &:not(:first-child)
-                        margin-left: space()
-                        &::before
-                            content: '|'
