@@ -42,7 +42,10 @@
                     a
                         @include body-text
                         @extend .categorie-item
-            @include media-breakpoint-down(desktop)
+        @include media-breakpoint-up(desktop)
+            justify-content: center
+        @include media-breakpoint-down(desktop)
+            .extendable
                 overflow: auto
                 padding-bottom: $spacing-1
                 margin-left: var(--grid-gutter-negative)
@@ -54,3 +57,4 @@
                     li
                         a
                             white-space: nowrap
+                            
