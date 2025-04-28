@@ -13,6 +13,8 @@ params:
   logo:
     header: ''
     footer: ''
+  toc:
+    disabled: true
   posts:
     index:
       options:
