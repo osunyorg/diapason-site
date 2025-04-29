@@ -7,7 +7,14 @@
             justify-content: center
         .has-lead
             max-width: columns(10)
+        .hero-text
+            padding-top: $spacing-5
 .projects__section, .posts__section
     .hero
         h1
             @include h2
+.posts__page,
+.projects__page
+    .hero-text
+        @include media-breakpoint-up(desktop)
+            padding-top: $spacing-6
