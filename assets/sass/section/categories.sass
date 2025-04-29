@@ -6,7 +6,7 @@
     text-decoration: none
     transition: 0.3s
     &:hover
-        background-color: $color-text
+        background-color: var(--color-text)
         color: var(--color-background)
 
 .taxonomies-single,
@@ -42,3 +42,19 @@
                     a
                         @include body-text
                         @extend .categorie-item
+        @include media-breakpoint-up(desktop)
+            justify-content: center
+        @include media-breakpoint-down(desktop)
+            .extendable
+                overflow: auto
+                padding-bottom: $spacing-1
+                margin-left: var(--grid-gutter-negative)
+                margin-right: var(--grid-gutter-negative)
+                padding-left: var(--grid-gutter)
+                padding-right: var(--grid-gutter)
+                ul
+                    flex-wrap: nowrap
+                    li
+                        a
+                            white-space: nowrap
+                            

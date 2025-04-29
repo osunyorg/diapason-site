@@ -10,7 +10,7 @@
             > span:first-child
                 font-weight: bold
     .document-content::after
-        background-color: $color-background-alt
+        background-color: var(--color-background-alt)
     .post-sidebar
         padding-bottom: calc(#{$spacing-6} * 2)
 
@@ -37,15 +37,19 @@
                         margin-top: $spacing-3
                         max-width: columns(8)
                         width: columns(8)
-// hover color
-.posts--list
+
+.block-posts--list, .posts--list
+    article
+        a, .post-meta, time
+            color: inherit
+        .post-content
+            transition: color $color-duration
     article:hover
-        *
-            color: $color-accent
-.block-posts--list
-    article:hover
-        .post-content a
-            color: $color-accent
+        .post-content
+            color: var(--color-accent)
+    @include in-page-without-sidebar
+        article .post-meta time
+            margin-top: $spacing-3
 
 // block title
 .block-posts
@@ -54,3 +58,7 @@
             opacity: 0
         &:hover::after
             opacity: 1
+
+.section-sidebar
+    --border-width: 1px
+    --color-text-alt: var(--color-text)

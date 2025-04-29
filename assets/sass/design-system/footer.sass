@@ -1,46 +1,30 @@
+$large-breakpoint: 1600px
+
 footer#document-footer
-    @include media-breakpoint-up(desktop)
+    .logo
+        display: table
     > .container:first-child
-        padding-top: pxToRem(220)
+        padding-top: pxToRem(50)
         padding-bottom: 0
         justify-content: center
-        margin-bottom: pxToRem(-18)
-        + .container
-            display: flex
-            padding-top: $spacing-6
+        @include media-breakpoint-up(desktop)
+            padding-top: pxToRem(250)
+            padding-bottom: 0
+            justify-content: center
+            margin-bottom: pxToRem(-180)
+            + .container
+                display: flex
+                padding-top: $spacing-6
     .footer-legals
         order: 2
-        @media screen and (min-width: 1600px)
-            align-items: center
-            display: flex
-            gap: space(2)
-            justify-content: space-between
+        @include media-breakpoint-up(desktop)
             ul
-                display: inline
                 li
-                    display: inline
-                li + li
-                    margin-top: 0
-                    margin-left: space()
-        .footer-credit
-            margin-top: $spacing-2
-            @media screen and (min-width: 1600px)
-                margin-top: 0
-        @media screen and (max-width: 1600px)
-            ul li
-                text-align: right
+                    text-align: right
+    .footer-credit
+        margin-top: $spacing-2
     .footer-social
-        ul
-            @media screen and (max-width: 1600px)
+        @include media-breakpoint-up(desktop)
+            ul
                 li
                     text-align: left
-            @media screen and (min-width: 1600px)
-                display: flex
-                flex-wrap: wrap
-                align-items: baseline
-                justify-content: flex-end
-                li
-                    &:not(:first-child)
-                        margin-left: space()
-                        &::before
-                            content: '|'

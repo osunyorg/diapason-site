@@ -1,6 +1,6 @@
 .block-siblings-navigation
     padding-top: $spacing-4
-    background-color: $color-background-alt
+    background-color: var(--color-background-alt)
     margin-bottom: 0
     .posts__page:not(.full-width) .document-content &
         .block-content
@@ -14,7 +14,7 @@
                 padding-bottom: $spacing-3
                 position: relative
                 &:hover
-                    color: $color-text
+                    color: var(--color-text)
                     &::after
                         width: var(--grid-gutter)
                 span
@@ -34,7 +34,7 @@
                 justify-content: space-between
             li 
                 a::after
-                    background: $color-text
+                    background: var(--color-text)
                     bottom: 0
                     height: 3px
                     position: absolute
