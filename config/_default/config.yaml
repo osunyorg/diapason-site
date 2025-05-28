@@ -39,3 +39,6 @@ params:
         position: content
     share_links:
       enabled: false
+  home:
+    head:
+      title: site
