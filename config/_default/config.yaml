@@ -6,6 +6,8 @@ removePathAccents: true
 pagination:
   pagerSize: 30
 params:
+  debug:
+    productionUrl: "https://www.diapason-agence.fr"
   summary:
     position: hero
   search:
@@ -23,7 +25,7 @@ params:
     single:
       taxonomies:
         position: hero
-        display: false
+        show_name: false
       summary:
         position: content # hero | content
   projects:
@@ -34,7 +36,7 @@ params:
     single:
       taxonomies:
         position: hero
-        display: false
+        show_name: false
       summary:
         position: content
     share_links:
