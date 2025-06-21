@@ -2,7 +2,7 @@
 title: Menu principal
 items:
 - title: Références
-  target: "/projets/"
+  target: "/references/"
   kind: page
   new_tab: false
   children: []
