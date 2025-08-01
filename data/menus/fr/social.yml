@@ -11,8 +11,8 @@ items:
   kind: blank
   new_tab: false
   children: []
-- title: 'bonjour@diapason-agence.fr '
-  target: 'mailto:bonjour@diapason-agence.fr '
+- title: 'charlotte.petit@diapason-agence.fr '
+  target: 'mailto:charlotte.petit@diapason-agence.fr '
   kind: url
   new_tab: false
   children: []
