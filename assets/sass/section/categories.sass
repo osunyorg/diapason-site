@@ -23,27 +23,20 @@
 .projects__section
     .taxonomies-list
         margin-top: 0
-        button
-            @extend .sr-only
-        .extendable
-            background: none
-            display: block
-            position: relative
-            top: unset
-            right: unset
-            left: unset
-            ul
-                display: flex
-                gap: $spacing-2
-                flex-wrap: wrap
-                li
-                    &:not(:first-child)
-                        border: none
-                    a
-                        @include body-text
-                        @extend .categorie-item
+        ul
+            display: flex
+            gap: $spacing-2
+            flex-wrap: wrap
+            li
+                &:not(:first-child)
+                    border: none
+                a
+                    @include body-text
+                    @extend .categorie-item
         @include media-breakpoint-up(desktop)
             justify-content: center
+            &--inline
+                display: block
         @include media-breakpoint-down(desktop)
             .extendable
                 overflow: auto
