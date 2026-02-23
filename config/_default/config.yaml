@@ -50,3 +50,11 @@ params:
   home:
     head:
       title: site
+  image_sizes:
+    sections:
+      projects:
+        layouts:
+          grid:
+            mobile:   360
+            tablet:   555
+            desktop:  575
