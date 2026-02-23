@@ -1,4 +1,5 @@
-theme: 
+_merge: deep
+theme:
   - osuny
   - osuny-masonry
 enableRobotsTXT: true
