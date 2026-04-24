@@ -15,202 +15,202 @@ for = ["**/*.png", "**/*.jpg", "**/*.jpeg", "**/*.gif", "**/*.webp"]
 Cache-Control = "max-age=31536000, no-transform, public"
 
 [[redirects]]
-from = "/projets/2024-booster-du-reemploi/"
+from = "/projets/2024-booster-du-reemploi/index.html"
 to = "/references/2024-booster-du-reemploi/"
 
 [[redirects]]
-from = "/projets/2024-a-vivre-bilan-de-mandat-annuel/"
+from = "/projets/2024-a-vivre-bilan-de-mandat-annuel/index.html"
 to = "/references/2023-a-vivre-bilan-de-mandat-annuel/"
 
 [[redirects]]
-from = "/projets/2022-quand-saint-genis-info-se-refait-une-beaute/"
+from = "/projets/2022-quand-saint-genis-info-se-refait-une-beaute/index.html"
 to = "/references/2022-quand-saint-genis-info-se-refait-une-beaute/"
 
 [[redirects]]
-from = "/projets/2024-mon-premier-le-mag-darrondissement/"
+from = "/projets/2024-mon-premier-le-mag-darrondissement/index.html"
 to = "/references/2023-mon-premier-le-mag-darrondissement/"
 
 [[redirects]]
-from = "/projets/2020-met-creation-de-contenu-multicanal/"
+from = "/projets/2020-met-creation-de-contenu-multicanal/index.html"
 to = "/references/2024-met-creation-de-contenu-multicanal/"
 
 [[redirects]]
-from = "/projets/2024-ville-de-lyon-site-internet/"
+from = "/projets/2024-ville-de-lyon-site-internet/index.html"
 to = "/references/2024-ville-de-lyon-site-internet/"
 
 [[redirects]]
-from = "/projets/2024-valorplast/"
+from = "/projets/2024-valorplast/index.html"
 to = "/references/2024-valorplast/"
 
 [[redirects]]
-from = "/projets/2024-relyon-nous/"
+from = "/projets/2024-relyon-nous/index.html"
 to = "/references/2024-relyon-nous/"
 
 [[redirects]]
-from = "/projets/2022-creation-de-contenus-pour-la-ville-de-lyon/"
+from = "/projets/2022-creation-de-contenus-pour-la-ville-de-lyon/index.html"
 to = "/references/2022-creation-de-contenus-pour-la-ville-de-lyon/"
 
 [[redirects]]
-from = "/projets/2024-met-creation-de-contenu-multicanal/"
+from = "/projets/2024-met-creation-de-contenu-multicanal/index.html"
 to = "/references/2024-met-creation-de-contenu-multicanal/"
 
 [[redirects]]
-from = "/actualites/2024-10-25-sobriete-editoriale-quand-moins-c-est-plus/"
+from = "/actualites/2024-10-25-sobriete-editoriale-quand-moins-c-est-plus/index.html"
 to = "/actualites/2022-11-25-sobriete-editoriale-quand-moins-c-est-plus/"
 
 [[redirects]]
-from = "/projets/redaction/"
+from = "/projets/redaction/index.html"
 to = "/references/redaction/"
 
 [[redirects]]
-from = "/actualites/2025-01-06-test-dactualite/"
+from = "/actualites/2025-01-06-test-dactualite/index.html"
 to = "/actualites/2025-01-06-ecriture-inclusive-versus-accessible/"
 
 [[redirects]]
-from = "/projets/2024-clermont-metropole-mag-cest-un-match/"
+from = "/projets/2024-clermont-metropole-mag-cest-un-match/index.html"
 to = "/references/2024-clermont-metropole-mag-cest-un-match/"
 
 [[redirects]]
-from = "/projets/2024-invest-in-clermont-sobriete/"
+from = "/projets/2024-invest-in-clermont-sobriete/index.html"
 to = "/references/2024-invest-in-clermont-sobriete/"
 
 [[redirects]]
-from = "/projets/2024-lyon/"
+from = "/projets/2024-lyon/index.html"
 to = "/references/2025-lyon/"
 
 [[redirects]]
-from = "/projets/2022-traits-dunion-team-ville-de-lyon/"
+from = "/projets/2022-traits-dunion-team-ville-de-lyon/index.html"
 to = "/references/2025-traits-dunion-team-ville-de-lyon/"
 
 [[redirects]]
-from = "/projets/2020-traits-dunion-team-ville-de-lyon/"
+from = "/projets/2020-traits-dunion-team-ville-de-lyon/index.html"
 to = "/references/2025-traits-dunion-team-ville-de-lyon/"
 
 [[redirects]]
-from = "/projets/2022-booster-du-reemploi/"
+from = "/projets/2022-booster-du-reemploi/index.html"
 to = "/references/2024-booster-du-reemploi/"
 
 [[redirects]]
-from = "/projets/2023-edf-solutions-solaires/"
+from = "/projets/2023-edf-solutions-solaires/index.html"
 to = "/references/2023-edf-solutions-solaires/"
 
 [[redirects]]
-from = "/references/2020-met-creation-de-contenu-multicanal/"
+from = "/references/2020-met-creation-de-contenu-multicanal/index.html"
 to = "/references/2024-met-creation-de-contenu-multicanal/"
 
 [[redirects]]
-from = "/projets/2025-panorama-des-aires-de-jeux-a-lyon/"
+from = "/projets/2025-panorama-des-aires-de-jeux-a-lyon/index.html"
 to = "/references/2025-panorama-des-aires-de-jeux-a-lyon/"
 
 [[redirects]]
-from = "/references/2020-the-only-un-mag-economique-pas-comme-les-autres/"
+from = "/references/2020-the-only-un-mag-economique-pas-comme-les-autres/index.html"
 to = "/references/2024-the-only-un-mag-economique-pas-comme-les-autres/"
 
 [[redirects]]
-from = "/projets/eco-conception/"
+from = "/projets/eco-conception/index.html"
 to = "/references/eco-conception/"
 
 [[redirects]]
-from = "/projets/2024-sensibilisation-sobriete-editoriale-ville-de-lyon/"
+from = "/projets/2024-sensibilisation-sobriete-editoriale-ville-de-lyon/index.html"
 to = "/references/2024-valorplast/"
 
 [[redirects]]
-from = "/actualites/2025-10-03-ia-stop-ou-encore/"
+from = "/actualites/2025-10-03-ia-stop-ou-encore/index.html"
 to = "/actualites/2025-12-29-ia-stop-ou-encore/"
 
 [[redirects]]
-from = "/actualites/2024-10-25-lancement-de-lagence/"
+from = "/actualites/2024-10-25-lancement-de-lagence/index.html"
 to = "/actualites/2022-11-25-sobriete-editoriale-quand-moins-c-est-plus/"
 
 [[redirects]]
-from = "/projets/langage-clair/"
+from = "/projets/langage-clair/index.html"
 to = "/references/langage-clair/"
 
 [[redirects]]
-from = "/references/2024-lyon/"
+from = "/references/2024-lyon/index.html"
 to = "/references/2025-lyon/"
 
 [[redirects]]
-from = "/projets/2023-mon-premier-le-mag-darrondissement/"
+from = "/projets/2023-mon-premier-le-mag-darrondissement/index.html"
 to = "/references/2023-mon-premier-le-mag-darrondissement/"
 
 [[redirects]]
-from = "/projets/2020-the-only-un-mag-economique-pas-comme-les-autres/"
+from = "/projets/2020-the-only-un-mag-economique-pas-comme-les-autres/index.html"
 to = "/references/2024-the-only-un-mag-economique-pas-comme-les-autres/"
 
 [[redirects]]
-from = "/projets/communication-editoriale/"
+from = "/projets/communication-editoriale/index.html"
 to = "/references/redaction/"
 
 [[redirects]]
-from = "/projets/patrimoine/"
+from = "/projets/patrimoine/index.html"
 to = "/references/eco-conception/"
 
 [[redirects]]
-from = "/projets/2023-traits-dunion-team-ville-de-lyon/"
+from = "/projets/2023-traits-dunion-team-ville-de-lyon/index.html"
 to = "/references/2025-traits-dunion-team-ville-de-lyon/"
 
 [[redirects]]
-from = "/references/2022-traits-dunion-team-ville-de-lyon/"
+from = "/references/2022-traits-dunion-team-ville-de-lyon/index.html"
 to = "/references/2025-traits-dunion-team-ville-de-lyon/"
 
 [[redirects]]
-from = "/projets/2024-comme-on-se-retrouve-a-villeurbanne/"
+from = "/projets/2024-comme-on-se-retrouve-a-villeurbanne/index.html"
 to = "/references/2024-comme-on-se-retrouve-a-villeurbanne/"
 
 [[redirects]]
-from = "/projets/"
+from = "/projets/index.html"
 to = "/references/"
 
 [[redirects]]
-from = "/projets/2020-brou-soyons-fous/"
+from = "/projets/2020-brou-soyons-fous/index.html"
 to = "/references/2020-brou-soyons-fous/"
 
 [[redirects]]
-from = "/projets/2024-la-refonte-du-met-primee-a-capcom/"
+from = "/projets/2024-la-refonte-du-met-primee-a-capcom/index.html"
 to = "/references/2024-invest-in-clermont-sobriete/"
 
 [[redirects]]
-from = "/projets/2024-brou-soyons-fous/"
+from = "/projets/2024-brou-soyons-fous/index.html"
 to = "/references/2020-brou-soyons-fous/"
 
 [[redirects]]
-from = "/projets/histoire/"
+from = "/projets/histoire/index.html"
 to = "/references/conseil-editorial/"
 
 [[redirects]]
-from = "/projets/2024-panorama-des-aires-de-jeux-a-lyon/"
+from = "/projets/2024-panorama-des-aires-de-jeux-a-lyon/index.html"
 to = "/references/2025-panorama-des-aires-de-jeux-a-lyon/"
 
 [[redirects]]
-from = "/projets/2024-clermont-auvergne-metropole-passe-au-langage-clair/"
+from = "/projets/2024-clermont-auvergne-metropole-passe-au-langage-clair/index.html"
 to = "/references/2024-clermont-auvergne-metropole-passe-au-langage-clair/"
 
 [[redirects]]
-from = "/references/2025-quand-saint-genis-info-se-refait-une-beaute/"
+from = "/references/2025-quand-saint-genis-info-se-refait-une-beaute/index.html"
 to = "/references/2022-quand-saint-genis-info-se-refait-une-beaute/"
 
 [[redirects]]
-from = "/projets/conseil-editorial/"
+from = "/projets/conseil-editorial/index.html"
 to = "/references/conseil-editorial/"
 
 [[redirects]]
-from = "/projets/2021-a-vivre-bilan-de-mandat-annuel/"
+from = "/projets/2021-a-vivre-bilan-de-mandat-annuel/index.html"
 to = "/references/2023-a-vivre-bilan-de-mandat-annuel/"
 
 [[redirects]]
-from = "/references/2021-a-vivre-bilan-de-mandat-annuel/"
+from = "/references/2021-a-vivre-bilan-de-mandat-annuel/index.html"
 to = "/references/2023-a-vivre-bilan-de-mandat-annuel/"
 
 [[redirects]]
-from = "/projets/2024-the-only-un-mag-economique-pas-comme-les-autres/"
+from = "/projets/2024-the-only-un-mag-economique-pas-comme-les-autres/index.html"
 to = "/references/2024-the-only-un-mag-economique-pas-comme-les-autres/"
 
 [[redirects]]
-from = "/projets/2024-quand-saint-genis-info-se-refait-une-beaute/"
+from = "/projets/2024-quand-saint-genis-info-se-refait-une-beaute/index.html"
 to = "/references/2022-quand-saint-genis-info-se-refait-une-beaute/"
 
 [[redirects]]
-from = "/projets/2025-creation-de-contenus-pour-la-ville-de-lyon/"
+from = "/projets/2025-creation-de-contenus-pour-la-ville-de-lyon/index.html"
 to = "/references/2022-creation-de-contenus-pour-la-ville-de-lyon/"
 
