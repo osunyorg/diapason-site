@@ -39,8 +39,17 @@
             .year
                 @include h1
                 font-weight: normal
-        .taxonomies-single.without-label
+        .single-meta.without-label
             margin-top: 0
+            row-gap: $spacing-3
+            &, .taxonomies-single
+                justify-content: center
+
+    @include media-breakpoint-down(desktop)
+        .hero
+            .single-meta
+                .terms ul
+                    justify-content: center
     @include media-breakpoint-up(desktop)
         .hero
             figure

@@ -41,9 +41,11 @@ params:
         summary: false
         year: true
     single:
-      taxonomies:
+      meta:
         position: hero
-        show_name: false
+        options:
+          reading_time: false 
+          with_labels: false
       summary:
         position: content
     share_links:
