@@ -67,6 +67,10 @@ from = "/actualites/2025-01-06-test-dactualite/index.html"
 to = "/actualites/2025-01-06-ecriture-inclusive-versus-accessible/"
 
 [[redirects]]
+from = "/references/2026-lyon-1/index.html"
+to = "/references/2026-fondation-suez-rapport-dactivite/"
+
+[[redirects]]
 from = "/projets/2024-clermont-metropole-mag-cest-un-match/index.html"
 to = "/references/2024-clermont-metropole-mag-cest-un-match/"
 
